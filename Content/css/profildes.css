@@ -1,0 +1,135 @@
+
+:root {
+    --background: white;
+    --primary: #605DFF;
+    --primary-light: #E6E5FF;
+    --secondary: #DFE6EE;
+    --secondary-background: #F4F6F9;
+    --secondary-text: #448acf;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(246, 246, 246);
+}
+
+.formateurs-container {
+    margin: 0 auto 20px; /* Centre horizontalement et ajoute une marge en bas de 20px */
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligner en haut */
+    height: 100vh; /* Utiliser la hauteur de la vue pour centrer verticalement */
+}
+
+.card {
+    display: flex;
+    border: 1px solid var(--primary-light);
+    border-radius: 20px;
+    background-color: var(--background);
+    cursor: pointer;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.description {
+    color:#a9a9a9 /* Ajoute une marge en bas pour séparer visuellement les éléments */
+}
+
+/* Ajoutez d'autres styles CSS selon vos besoins */
+
+
+.title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.values {
+    /* Ajoutez des styles spécifiques pour les valeurs ici */
+    color: #333; /* Exemple de style : couleur de texte */
+    margin-bottom: 15px;
+}
+
+/* Ajoutez d'autres styles CSS selon vos besoins spécifiques */
+
+
+
+.card:hover {
+    box-shadow: 0 24px 72px 0 rgba(96, 93, 255, .1);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: start;
+    padding: 16px;
+
+  
+}
+
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.latest-article {
+    height: 36px;
+    padding: 4px 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-light);
+    color: var(--primary);
+    text-align: center;
+    margin: 0 auto; /* Centrer horizontalement avec une marge automatique */
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #518ff2;
+    justify-content: center;
+    height: 40px;
+    color: white;
+    border-radius: 10px;
+    margin: auto;
+    display: block; /* Ajout de display: block; pour occuper toute la largeur disponible */
+}
+
+button:hover{
+    background-color:  #5dabff; /* Changement de couleur au survol */
+
+    cursor: pointer;
+
+}
+
+/* Styles pour les div sans classe à l'intérieur de .content */
+.content > div {
+    margin-bottom: 8px; /* Ajout d'une marge en bas pour séparer chaque div */
+}
+
+/* Styles spécifiques pour les div avec du texte long, comme la description */
+.content > div.description {
+    margin-bottom: 16px; /* Une marge supplémentaire pour séparer la description */
+    line-height: 1.6; /* Espacement des lignes pour une meilleure lisibilité du texte */
+}
+
+/* Styles pour les div sans classe à l'intérieur de .card-content */
+.card-content > div {
+    margin-bottom: 8px; /* Ajout d'une marge en bas pour séparer chaque div */
+}
